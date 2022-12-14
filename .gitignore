@@ -1,0 +1,6 @@
+# Ignora os arquivos de cache gerados pelo vim
+*~
+
+# Ignora os ficheiros de configuração do vscode
+# Os arquivos de configurações são pessoais
+.vscode/
