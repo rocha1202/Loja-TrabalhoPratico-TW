@@ -1,0 +1,78 @@
+.footer{
+    width:auto;
+    background-color: white;
+    padding: 1.5em;
+    height: auto;
+    position:absolute;
+    bottom:0;
+    display: flex; 
+    justify-content: center;
+}
+
+
+#logo { grid-area: logo; }
+#social1 { grid-area: social1; }
+#social2 { grid-area: social2; }
+#label1{ grid-area: label1; }
+#label2{ grid-area: label2; }
+#email { grid-area: email; }
+#logolabel{grid-area: logolabel;}
+
+
+.grid-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'social1 label1 logo logolabel '
+    'social2 label2 logo logolabel'
+    'email email email email ';
+    gap: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 40%;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+.img-footer{
+    width:40%;
+    height:auto;
+}
+
+div p{
+   text-align: left;
+}
+
+.social{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.logo{
+    display: flex; 
+    justify-content: right;
+}
+
+#email p{
+    text-align: center;
+}
+
+#logo .img-footer{
+    width:70%;
+    height:auto;
+}
+
+
+
+
+
+
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+*/
