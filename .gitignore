@@ -4,3 +4,7 @@
 # Ignora os ficheiros de configuração do vscode
 # Os arquivos de configurações são pessoais
 .vscode/
+
+# Pasta temporaria para realizar testes sem precisar
+# Se preocupar com o git
+temp/
