@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-pt">
 <head>
-    <title>Como fazer input de password com olho de mostrar senha</title>
-    <!-- lib de icons -->
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
 </head>
 <body>
-    <h2>Faça o login</h2>
-    <form>
-        <div>
-            <input type="email" name="email" placeholder="Digite seu e-mail">
-        </div>
-        <div>
-            <input type="password" name="password" placeholder="Digite sua senha">
-            <span class="lnr lnr-eye"></span>
-        </div>
-        <div>
-            <input type="submit" value="Entrar">
-        </div>
-    </form>
+    <div id="login">
+        <form class="card">
+            <div class="card-header">
+                <h2>Login</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" autocomplete="off">
+                </div>
+                <div class="card-content-area">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" autocomplete="off">
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" value="login" class="submit">
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
