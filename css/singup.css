@@ -27,7 +27,7 @@ body {
 
 .card-header::after {
     content: "";
-    width: 70px;
+    width: 130px;
     height: 1px;
     background-color: #fff;
     display: block;
