@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}  
+
+footer{
+    position:absolute;
+    bottom:0;
+    justify-content: center;
+    background-color: grey;
+    padding: 1em;
+}
+
+#socialLogo{grid-area: socialLogo;}
+#logo { grid-area: logo; }
+
+#instagram { grid-area: instagram; }
+
+#adressLogo{grid-area: adressLogo;}
+#adress { grid-area: adress; }
+
+#phoneLogo{grid-area: phoneLogo;}
+#phone { grid-area: phone; }
+
+#email { grid-area: email; }
+#emailLogo{grid-area: emailLogo;}
+
+#website { grid-area: website; }
+#websiteLogo{grid-area: websiteLogo;}
+
+
+
+
+.grid-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    'adressLogo adress phoneLogo phone emailLogo email';
+    gap: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-items: center;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+.img-footer{
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+.menu-footer{
+    width:auto;
+}
+
+#footer-text{
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-footer{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        'adressLogo adress'
+        'phoneLogo phone'
+        'emailLogo email';
+        gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .img-footer{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .grid-footer{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        'adressLogo adress'
+        'phoneLogo phone'
+        'emailLogo email';
+        gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .img-footer{
+        width: 50%;
+    }
+}
+
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+*/
