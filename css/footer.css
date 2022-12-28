@@ -1,18 +1,11 @@
-body, html {
-    height: 100%;
-    margin: 0;
-}  
-
 footer{
     position:absolute;
     bottom:0;
     justify-content: center;
-    background-color: grey;
+    background-color: white;
     padding: 1em;
 }
 
-#socialLogo{grid-area: socialLogo;}
-#logo { grid-area: logo; }
 
 #instagram { grid-area: instagram; }
 
@@ -33,17 +26,16 @@ footer{
 
 .grid-footer{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto ;
     grid-template-areas:
     'adressLogo adress phoneLogo phone emailLogo email';
     gap: 1em;
-    font-family: 'Roboto Condensed', sans-serif;
     align-items: center;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
 }
 
 
@@ -66,8 +58,8 @@ footer{
 
 @media only screen and (max-width: 500px) {
     .grid-footer{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
         'adressLogo adress'
         'phoneLogo phone'
@@ -94,15 +86,10 @@ footer{
         gap: 1em;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 70%;
     }
 
     .img-footer{
-        width: 50%;
+        width: 30%;
     }
 }
-
-
-/* font-family: 'Overpass', sans-serif;
-font-family: 'Roboto Condensed', sans-serif; 
-*/
