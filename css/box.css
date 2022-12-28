@@ -1,0 +1,46 @@
+.box{
+    width: 100%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    display: flex;
+}
+
+.cover{
+    height: 30em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.content{
+    height: auto;
+    width: 100%;
+    background-color: grey;
+}
+
+#content-1, #content-3{
+    border-left: 5px solid black;
+}
+
+#content-2{
+    border-right: 5px solid black;
+}
+
+#cover-1{
+    background-image: url("../img/index-content/motherboard.jpg");
+}
+
+#cover-2{
+    background-image: url("../img/index-content/windows.jpg");
+}
+
+#cover-3{
+    background-image: url("../img/index-content/bsod.png");
+}
+
+.spacer{
+    height:10em;
+    background-color: white;
+}
