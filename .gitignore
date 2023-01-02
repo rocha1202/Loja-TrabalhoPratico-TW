@@ -8,3 +8,6 @@
 # Pasta temporaria para realizar testes sem precisar
 # Se preocupar com o git
 temp/
+
+# cache do mac
+.DS_store
