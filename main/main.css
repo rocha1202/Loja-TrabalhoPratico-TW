@@ -1,0 +1,28 @@
+body {
+    height: 100%;
+    width: 100%;
+    }
+    .menu-principal{
+    width: 100%;
+    background-color: darkgrey;
+    height: 60px;
+    }
+    main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    }
+    .logo{
+    float: left;
+    padding: 5px;
+    width: 50%;
+    }
+    .contas ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    }
+    .contas{
+    width: 10%;
+    float: right;
+    }
