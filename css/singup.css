@@ -56,7 +56,9 @@ body {
     outline: none;
     color: #fff;
 }
-
+.card-forgotpassword{
+    color: #fff;
+}
 .card-footer {
     display: flex;
     flex-direction: column;
