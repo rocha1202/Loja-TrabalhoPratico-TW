@@ -41,29 +41,19 @@ header{
 
 
 #logoHeader { grid-area: logoHeader; }
-#pesquisar{grid-area: pesquisar;}
-#botaoPesquisa{grid-area: botaoPesquisa;}
+#search{grid-area: search;}
+#searchButton{grid-area: searchButton;}
+#burger-menu{grid-area: burger-menu;}
 #produtos { grid-area: produtos; }
 #novidades{grid-area: novidades;}
 #areaUtilizador{grid-area: areaUtilizador;}
 
-
-#ImagemPesquisa{
-    height:auto;
-    display: block;
-    margin-right: auto;
-    width: 2em;
-    padding: 1em;
-}
-
-
 .grid-header{
     display:grid;
-    grid-template-columns: 30% auto auto auto auto auto;
+    grid-template-columns: 15% 45% auto auto auto auto;
     grid-template-rows: auto ;
     grid-template-areas:
-    'logoHeader pesquisar botaoPesquisa produtos novidades areaUtilizador';
-    gap: 1em;
+    'logoHeader search searchButton produtos novidades areaUtilizador';
     align-items: center;
     width: 100%;
 }
@@ -73,7 +63,14 @@ header{
     padding: 1em;
 }
 
-#barraPesquisa{
+.img-header{
+    height:auto;
+    margin-left: 2em;
+    width: 15%;
+    padding: 1em;
+}
+
+#searchbar{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -82,24 +79,31 @@ header{
     border-radius: 4px;
 }
 
-.img-header{
+#imgSearch{
     height:auto;
     display: block;
-    margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 2em;
     padding: 1em;
 }
 
-
 @media screen and (max-width: 800px) {
+
+    header{
+        padding: 5px;
+    }
+
+    #header-text{
+        padding: 0;
+    }
+
     .grid-header{
         display:grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto ;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto auto  ;
         grid-template-areas:
         'logoHeader logoHeader logoHeader'
-        'pesquisar pesquisar botaoPesquisa'
+        'search search searchButton'
         'produtos novidades areaUtilizador';
         gap: 1em;
         padding: 0em;
@@ -108,20 +112,24 @@ header{
     }
 
     .img-header{
-        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1em;
     }
 
-    #barraPesquisa{
+    #searchbar{
         margin: 1em;
-        width: 60%;
+        width: 90%;
         display: block;
         margin-left: auto;
     }
 
-    #header-text{
-        padding: 0;
+    #imgSearch{
+        margin-left: auto;
+        margin-right: auto;
     }
+
 }
 
 a:link,a:visited,a:hover,a:active{
