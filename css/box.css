@@ -3,6 +3,7 @@
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     display: flex;
+    background-color: grey;
 }
 
 .cover{
@@ -11,13 +12,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .content{
-    height: auto;
+    height: 30em;
     width: 100%;
-    background-color: grey;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
 
 #content-1, #content-3{
@@ -37,10 +39,53 @@
 }
 
 #cover-3{
-    background-image: url("../img/index-content/bsod.png");
+    background-image: url("../img/index-content/keyboard.png");
 }
 
 .spacer{
     height:10em;
+    background-color: black;
+}
+
+.button-product{
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
     background-color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+    color: black;
+}
+
+p{
+    margin: 1em;
+}
+
+#link-box a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .cover{
+        display: none;
+    }
+
+    .content{
+        background-color: black;
+        color: white;
+    }
+
+    #content-1, #content-3{
+        border-left: none;
+    }
+    
+    #content-2{
+        border-right: none;
+    }
+
+    .spacer{
+        height:10em;
+        background-color: white;
+    }
 }
