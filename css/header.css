@@ -33,6 +33,7 @@ header{
     background-color: white;
     width: 100%;
     padding: 0;
+    border-bottom: 5px solid white;
 }
 
 .menu-header{
