@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  font-family: monospace;
+  background-color: dimgray;
+}
+
+.account {
+  display: inline-block; /* mesmo que o inline só que respeita o comprimento e largura */
+  position: relative; /* não muda nada visualmente mas torna possivel usar o display absolute no content */
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.account a, .account a:visited {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 10px 10px;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  display: none;
+  position: absolute; /* colocando a posição absoluta em relação ao .dropdown sem after o flow do site*/
+  width: 100%;
+  z-index: 1;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.dropdown_content {
+  background-color: aliceblue;
+  margin: 10px 0;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.account p {
+  margin: 10px 0;
+}
+
+.account:hover .dropdown {
+  display: block;
+  animation-name: dropdown;
+  animation-duration: 1s;
+  /* animation-delay: .5s; */
+  animation-direction: normal;
+  animation-fill-mode: normal;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
