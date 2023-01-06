@@ -35,6 +35,11 @@ body {
     margin-left: -5px;
 }
 
+.close img{
+    width: 50px;
+    padding-left: 85%;
+}
+
 .card-content label {
     color: #fff;
     font-size: 12px;
