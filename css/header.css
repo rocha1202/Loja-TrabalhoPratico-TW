@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Roboto Mono';
-    background-color: black;
+    background-color: #454d6b;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
@@ -13,27 +13,27 @@ body, html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #fff; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: black; 
+    background: rgba(19, 19, 19, 0.3); 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: black; 
+    background: rgba(19, 19, 19, 0.3); 
   }
 
 
 header{
     top:0;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(19, 19, 19, 0.3);
     width: 100%;
     padding: 0;
-    border-bottom: 5px solid white;
+    border-bottom: 1px solid #131313;
 }
 
 .menu-header{
@@ -78,7 +78,7 @@ header{
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid rgba(19, 19, 19, 0.3);
     border-radius: 4px;
 }
 
@@ -136,6 +136,6 @@ header{
 }
 
 #header-text a,a:link,a:visited,a:hover,a:active{
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
