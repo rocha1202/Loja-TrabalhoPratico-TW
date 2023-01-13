@@ -62,6 +62,8 @@ body {
 }
 .card-forgotpassword{
     color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
 }
 .card-footer {
     display: flex;
