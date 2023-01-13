@@ -1,6 +1,6 @@
 /** 
  * Contem routinas e utilitario gericos
- * @module lojeonline/module 
+ * @module lojaonline/module 
  */
 
 /**
@@ -10,7 +10,7 @@
  * @param {number} time - quanto tempo em segundos para fazer o redirecionamento
  * @returns {boolean}
  */
-export function home(time=5) {
+export function home(time=2) {
   // só faz o reload se estiver a ser executado de um servidor
   // não funciona quando esta a executar usando o arquivo diretamente
   if(location.protocol == 'file:') return false
