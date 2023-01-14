@@ -1,85 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-  <title>Produtos</title>
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/box.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/box.css">
 </head>
 <!-- a classe logout indica que está sem uma conta, caso logado a classe é login -->
 <!-- a classe light indica o tema a usar -->
-<body class="logout light">
-    <header>
-        <div class="grid-header">
-            <div class="menu-header" id="logoHeader"><img class="img-header" src="../img/footer-logos/adress.png"></div>
-            <div class="menu-header" id="search">
-                <input type="text" id="searchbar" placeholder="Pesquisar">
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./img/index/logo.png" height="50px" />
+                </div>
             </div>
-            <div class="menu-header" id="searchButton">
-                <input type="image" src="../img/search.png" alt="Submit" id="imgSearch">
-            </div>
-            <div class="menu-header" id="produtos"><p id="header-text"><a id="menu-link" href="#">Novidades</a></p></div>
-            <div class="menu-header" id="novidades"><p id="header-text"><a id="menu-link" href="html/products.html">Produtos</a></p></div>
-            <div class="menu-header" id="areaUtilizador"><p id="header-text"><a id="menu-link" href="html/login.html">Login</a></p></div>
-        </div>
+        </main>
     </header>
-    <main>
-        <div class="box" id="box-1">
-            <div class="cover" id="cover-1"></div>
-            <div class="content" id="content-1">
-                <h1>Hardware</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus. Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque, hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus, vehicula ligula nec, vehicula massa.
-                </p>
-                <br><br>
-                <div class="button-product">
-                    <p><a id="link-box" href="index.html">Ver mais</a></p>
-                </div>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="html/products.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="html/login.html">Login</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="box" id="box-2">
-            <div class="content" id="content-2">
-                <h1>Software</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus. Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque, hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus, vehicula ligula nec, vehicula massa.
-                </p>
-                <br><br>
-                <div class="button-product">
-                    <a id="link-box" href="index.html"><p>Ver mais</p></a>
-                </div>
-            </div>
-            <div class="cover" id="cover-2"></div>
-        </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="box" id="box-3">
-            <div class="cover" id="cover-3"></div>
-            <div class="content" id="content-3">
-                <h1>Periféricos</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus. Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque, hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus, vehicula ligula nec, vehicula massa.
-                </p>
-                <br><br>
-                <div class="button-product">
-                    <a id="link-box" href="index.html"><p>Ver mais</p></a>
-                </div>
+            <div class="busca">
+                <input placeholder="Procurar..." type="text" />
             </div>
         </div>
     </main>
+
+<div class="box" id="box-1">
+        <div class="cover" id="cover-1"></div>
+        <div class="content" id="content-1">
+            <h1>Hardware</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem
+                blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus.
+                Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque,
+                hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus,
+                vehicula ligula nec, vehicula massa.
+            </p>
+            <br><br>
+            <div class="button-product">
+                <p><a id="link-box" href="index.html">Ver mais</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="box" id="box-2">
+        <div class="content" id="content-2">
+            <h1>Software</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem
+                blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus.
+                Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque,
+                hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus,
+                vehicula ligula nec, vehicula massa.
+            </p>
+            <br><br>
+            <div class="button-product">
+                <a id="link-box" href="index.html">
+                    <p>Ver mais</p>
+                </a>
+            </div>
+        </div>
+        <div class="cover" id="cover-2"></div>
+    </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="box" id="box-3">
+        <div class="cover" id="cover-3"></div>
+        <div class="content" id="content-3">
+            <h1>Periféricos</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi et rutrum malesuada, mi sem
+                blandit arcu, vitae maximus purus nulla vitae turpis. Suspendisse ac mi a velit pellentesque finibus.
+                Curabitur tincidunt nisl a tortor tempus dignissim. Donec vitae condimentum dolor. Quisque urna neque,
+                hendrerit eget auctor sed, bibendum nec mi. Maecenas sit amet turpis velit. Duis eu enim dapibus,
+                vehicula ligula nec, vehicula massa.
+            </p>
+            <br><br>
+            <div class="button-product">
+                <a id="link-box" href="index.html">
+                    <p>Ver mais</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div class="grid-footer">
-            <div class="menu-footer" id="adressLogo"><img class="img-footer" src="../img/footer-logos/adress.png"></div>
-            <div class="menu-footer" id="adress"><p id="footer-text">R. Dom Sancho I 981, 4480-876 Vila do Conde</p></div>
-            <div class="menu-footer" id="phoneLogo"><img class="img-footer" src="../img/footer-logos/phone.png"></div>
-            <div class="menu-footer" id="phone"><p id="footer-text">+351 252 291 700</p></div>
-            <div class="menu-footer" id="emailLogo"><img class="img-footer" src="../img/footer-logos/email.png"></div>
-            <div class="menu-footer" id="email"><p id="footer-text">esmad@mail.com</p></div>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <h3><b>Populr Post</b></h3>
+                    <p>Lorem Ipsum is simply dummy
+                        text of the printing.</p>
+                    <p class="clock">25-September 2013
+                    <p>
+                    <p>Lorem Ipsum is simply dummy
+                        text of the printing.</p>
+                    <p class="clock">25-September 2013
+                    <p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Tags</b></h3>
+                    <p>apps blog blogroll christmas cms coda concert daily design develop dialog drinks envato food fun
+                        gallery gift holiday icon illustration ipad iphone journal jquery label link marketing mobile
+                        motion music photo profession quotation recipes show sound strategy tv typography video</p>
+                </div>
+                <div class="col-4">
+                    <h3><b>A little about us</b></h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Get in touch</b></h3>
+                    <p>
+                        Lorem Ipsum is simply dummy
+                        of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since.
+                    </p>
+                    <p class="local">Vila do Conde, PT
+                    <p>
+                    <p class="emailico">email@email.com
+                    <p>
+                    <p class="telefoneico">+351 000 000 000
+                    <p>
+                </div>
+            </div>
         </div>
     </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+
+            <p>
+                Copyright &copy; Grupo 14 - TSIW
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
