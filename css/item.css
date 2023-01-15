@@ -1,4 +1,5 @@
 .item-section{
+<<<<<<< HEAD
     background-color: blue;
     height: 1000px;
     display:inline-block;
@@ -47,4 +48,8 @@
       'img title price'
       'img desc desc'
       'img desc desc';
+=======
+    height: 500px;
+    position: static;
+>>>>>>> 2e270834556612bc6126217eb4be106b3e2fe18d
 }
