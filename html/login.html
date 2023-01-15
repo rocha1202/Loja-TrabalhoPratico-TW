@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
 
 <body>
-    <div id="login">
-        <form class="card">
-            <div class="close">
-                <a href="/index.html" ><img src="/img/close.png"></a>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../img/index/logo.png" height="50px" />
+                </div>
             </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="/html/products.html">Produtos</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Procurar..." type="text" />
+            </div>
+        </div>
+    </main>
+    <div id="login">
+        <div class="card">
             <div class="card-header">
                 <h2>Login</h2>
             </div>
@@ -37,10 +66,64 @@
                 <a href="/html/signup.html" class="signup">Criar Conta</a>
             </div>
 
-        </form>
+        </div>
     </div>
 
     <script type="module" src="../js/login.js"></script>
 </body>
+<footer>
+    <div class="col-100 footer">
+        <div class="content">
+            <div class="col-4">
+                <h3><b>Populr Post</b></h3>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing.</p>
+                <p class="clock">25-September 2013
+                <p>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing.</p>
+                <p class="clock">25-September 2013
+                <p>
+            </div>
+            <div class="col-4">
+                <h3><b>Tags</b></h3>
+                <p>apps blog blogroll christmas cms coda concert daily design develop dialog drinks envato food fun
+                    gallery gift holiday icon illustration ipad iphone journal jquery label link marketing mobile
+                    motion music photo profession quotation recipes show sound strategy tv typography video</p>
+            </div>
+            <div class="col-4">
+                <h3><b>A little about us</b></h3>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
+                </p>
+            </div>
+            <div class="col-4">
+                <h3><b>Get in touch</b></h3>
+                <p>
+                    Lorem Ipsum is simply dummy
+                    of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since.
+                </p>
+                <p class="local">Vila do Conde, PT
+                <p>
+                <p class="emailico">email@email.com
+                <p>
+                <p class="telefoneico">+351 000 000 000
+                <p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="col-100 footer-2">
+    <div class="content">
+
+        <p>
+            Copyright &copy; Grupo 14 - TSIW
+        </p>
+    </div>
+</div>
 
 </html>

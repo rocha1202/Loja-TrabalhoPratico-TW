@@ -1,55 +1,55 @@
-.item-section{
-<<<<<<< HEAD
+.item-section {
     background-color: blue;
     height: 1000px;
-    display:inline-block;
+    display: inline-block;
     width: 100%;
 }
 
-.item-box{
+.item-box {
     width: 70%;
     background-color: grey;
     border: 5px solid black;
     margin: 0 auto;
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-#img-item{grid-area: img;}
-#item-title{grid-area: title;}
-#item-price{grid-area: price;}
-#item-desc{grid-area: desc;}
+#img-item {
+    grid-area: img;
+}
+
+#item-title {
+    grid-area: title;
+}
+
+#item-price {
+    grid-area: price;
+}
+
+#item-desc {
+    grid-area: desc;
+}
 
 
-#item-title,#item-price,#item-desc{
+#item-title,
+#item-price,
+#item-desc {
     font-size: 18px;
     padding: 2%;
 }
-
-
-
-
-.img-item{
+.img-item {
     background-image: url("../img/index/ram2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
-
-
-.grid-item{
+.grid-item {
     display: grid;
     grid-template-columns: 50% auto auto;
     grid-template-rows: auto auto auto;
     grid-template:
-      'img title price'
-      'img desc desc'
-      'img desc desc';
-=======
-    height: 500px;
-    position: static;
->>>>>>> 2e270834556612bc6126217eb4be106b3e2fe18d
+        'img title price'
+        'img desc desc'
+        'img desc desc';
 }
