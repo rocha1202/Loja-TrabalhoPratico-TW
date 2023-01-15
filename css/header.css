@@ -47,7 +47,7 @@ main,
 
 .header-2 {
     background-color: #ffffff;
-    width: 980px;
+    width: auto;
     margin: 0 auto;
     padding: 16px;
 }
