@@ -33,7 +33,6 @@ ul {
     height: 60px;
 }
 
-main,
 .content {
     margin: 0 auto;
     width: 980px;
@@ -94,130 +93,11 @@ main,
     background-image: url(../img/index/icone-search.png);
     background-repeat: no-repeat;
     height: 36px;
-    padding: 12px;
+    padding: 3px;
     width: 190px;
     margin-top: 10px;
     background-position: 96%;
     border: 1px solid #d6d6d6;
-}
-
-.col-100 {
-    width: 100%;
-    float: left;
-    position: relative;
-}
-
-button.slick-prev {
-    font-size: 0px;
-    border: none;
-    width: 25px;
-    height: 51px;
-    z-index: 9;
-    background-color: transparent;
-    position: absolute;
-    background-image: url(../img/index/anterior.png);
-    top: 35%;
-    left: 14%;
-}
-
-button.slick-next {
-    font-size: 0px;
-    border: none;
-    width: 25px;
-    height: 51px;
-    z-index: 9;
-    background-color: transparent;
-    position: absolute;
-    background-image: url(../img/index/proximo.png);
-    top: 35%;
-    right: 14%;
-}
-
-.slick-list {
-    width: 100% !important;
-}
-
-.slick-initialized {
-    overflow: hidden;
-}
-
-.slick-dots li button {
-    font-size: 0px;
-    border: 5px solid #ffffff;
-    width: 26px;
-    height: 26px;
-    background: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-
-}
-
-.slick-dots {
-    margin: 0 auto;
-    position: absolute;
-    left: 45%;
-    top: 600px;
-}
-
-li.slick-active button {
-    background: #00bac6;
-}
-
-.slick-dots li {
-    padding-left: 10px;
-    display: inline-block;
-}
-
-/* PRODUTOS */
-h1 {
-    text-align: center;
-    margin: 0;
-    padding: 1em;
-}
-
-.products-section {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row nowrap;
-}
-
-.product {
-    max-width: 10%;
-    background-color: black;
-    max-height: 25em;
-    border: 5px solid black;
-    margin: 3%;
-}
-
-.product-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.product p {
-    color: black;
-    text-align: center;
-}
-
-#desc-prod {
-    color: white;
-}
-
-
-.product-button {
-    max-width: 100%;
-    background-color: white;
-    color: black;
-    padding: 5px;
-}
-
-hr {
-    width: 70%;
-    border-top: 3px solid black;
 }
 
 

@@ -1,124 +1,66 @@
-main{
-    width: 80%;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: white;
-    border-right: 1px solid rgba(19, 19, 19, 0.3);
-    border-left: 1px solid rgba(19, 19, 19, 0.3);
-
-}
-
-@media screen and (max-width: 1000px) {
-
-    main{
-        width: 100%;
-    }
-
-}
-
-.banner{
+.col-100 {
     width: 100%;
-    height: 20em;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    float: left;
     position: relative;
 }
 
-#banner-1{
-    background-image: url("../img/index-content/motherboard.jpg");
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/index/anterior.png);
+    top: 35%;
+    left: 14%;
 }
 
-#banner-2{
-    background-image: url("../img/index-content/windows.jpg");
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/index/proximo.png);
+    top: 35%;
+    right: 14%;
 }
 
-#banner-3{
-    background-image: url("../img/index-content/keyboard.png");
+.slick-list {
+    width: 100% !important;
 }
 
-h1{
-    text-align: center;
-    margin: 0;
-    padding:1em;
+.slick-initialized {
+    overflow: hidden;
 }
 
-.products-section{
-    width: 100%;
-    height: auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row nowrap;
-}
-
-.product{
-    max-width: 10%;
-    background-color: black;
-    max-height: 25em;
-    border: 5px solid black;
-    margin: 3%;
-}
-
-.product-img{
-    max-width:100%;
-    max-height:100%;
-}
-
-p{
-    color:black;
-    text-align: center;
-}
-
-#desc-prod{
-    color:white;
-}
-
-
-.product-button{
-    max-width: 100%;
-    background-color: white;
-    color: black;
-    padding:5px;
-}
-
-hr{
-    width: 70%;
-    border-top: 3px solid black;
-}
-
-
-#link-box a,a:link,a:visited,a:hover,a:active{
-    text-decoration: none;
-}
-
-@media screen and (max-width: 1250px) {
-
-    .product{
-        max-width: 20%;
-        background-color: black;
-        max-height: 25em;
-        border: 5px solid black;
-        margin: 3%;
-    }
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
 
 }
 
-
-@media screen and (max-width: 700px) {
-
-    .product{
-        max-width: auto;
-        background-color: black;
-        max-height: 25em;
-        border: 5px solid black;
-        margin: 3%;
-    }
-
-    .products-section{
-        flex-flow: column nowrap;
-    }
-
+.slick-dots {
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    top: 600px;
 }
 
+li.slick-active button {
+    background: #00bac6;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
