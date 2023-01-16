@@ -4,9 +4,7 @@ h1 {
     margin: 0;
     padding: 1em;
 }
-#content-1{
-    margin-top: 5%;
-}
+
 .products-section {
     width: 100%;
     height: auto;
@@ -50,4 +48,10 @@ h1 {
 hr {
     width: 70%;
     border-top: 3px solid black;
+}
+
+.box{
+    display: inline-block;
+    margin:auto;
+    width: 100%;
 }
