@@ -1,19 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-
 }
-
 
 #login {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* height: 1000px;*/
-    /* display:inline-block;  */
-    width:100%;
+    width: 100%;
 }
 
 .card {
@@ -93,4 +88,3 @@ body {
     color: #000;
     text-decoration: none;
 }
-

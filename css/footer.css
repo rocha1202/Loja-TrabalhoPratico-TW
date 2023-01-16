@@ -3,12 +3,12 @@
 }
 
 .footer {
-    background-image: url('../img/index/footer.png');
+    background-image: url('/img/index/footer.png');
     color: #ffffff;
 }
 
 .footer-2 {
-    background-image: url('../img/index/footer2.png');
+    background-image: url('/img/index/footer2.png');
     color: #c1c1c1;
     height: 90px;
 }
