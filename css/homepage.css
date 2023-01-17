@@ -59,3 +59,8 @@ li.slick-active button {
     padding-left: 10px;
     display: inline-block;
 }
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}

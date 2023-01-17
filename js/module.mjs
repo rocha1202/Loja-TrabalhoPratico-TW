@@ -126,6 +126,7 @@ export function signUp(username, password, remenber) {
 
   // guarda os dados do login no local storage (permanente)
   localStorage.setItem(username, password)
+  window.alert(`Usuario ${username} criado com sucesso.`);
   console.log(`Usuario ${username} criado com sucesso.`);
 
   // faz o login e retorna o nome do usuario
