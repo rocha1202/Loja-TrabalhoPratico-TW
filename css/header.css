@@ -93,6 +93,7 @@ ul {
     float: left;
     position: relative;
 }
+
 .busca input {
     background-image: url(../img/index/icone-search.png);
     background-repeat: no-repeat;
