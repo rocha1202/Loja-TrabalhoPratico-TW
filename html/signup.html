@@ -43,31 +43,31 @@
         </div>
     </main>
     <form id="form">
-    <div id="login">
-        <div class="card">
-            <div class="card-header">
-                <h2>Criar Conta</h2>
-            </div>
-            <div class="card-content">
-                <div class="card-content-area">
-                    <label for="utilizador">Utilizador</label>
-                    <input type="text" id="utilizador" autocomplete="off" required>
+        <div id="login">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Criar Conta</h2>
                 </div>
-                <div class="card-content-area">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" autocomplete="off" required>
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="utilizador">Utilizador</label>
+                        <input type="text" id="utilizador" autocomplete="off" required>
+                    </div>
+                    <div class="card-content-area">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" autocomplete="off" required>
+                    </div>
+                    <div class="card-forgotpassword">Lembrar password
+                        <input type="checkbox" id="remenber">
+                    </div>
                 </div>
-                <div class="card-forgotpassword">Lembrar password
-                    <input type="checkbox" id="remenber">
+                <div class="card-footer">
+                    <input type="submit" value="Criar" class="submit">
+                    <a href="/html/login.html" class="login">Login</a>
                 </div>
-            </div>
-            <div class="card-footer">
-                <input type="submit" value="Criar" class="submit">
-                <a href="/html/login.html" class="login">Login</a>
-            </div>
 
+            </div>
         </div>
-    </div>
     </form>
     <script type="module" src="/js/signup.js"></script>
 </body>
