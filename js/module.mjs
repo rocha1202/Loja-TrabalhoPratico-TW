@@ -96,6 +96,8 @@ export function login(username, password, remenber) {
   // a palavra-passe está errado
   if(storedPassword != password) {
     console.error(`Palavra-passe para usuario ${username} está errado.`);
+    
+    return false;
   }
 
   // remove o login anterior para evitar colisão

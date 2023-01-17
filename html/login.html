@@ -44,32 +44,34 @@
             </div>
     </header>
     <main>
-        <div id="login">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Login</h2>
-                </div>
-                <div class="card-content">
-                    <div class="card-content-area">
-                        <label for="utilizador">Utilizador</label>
-                        <input type="text" id="utilizador" autocomplete="off" required>
+        <form id="form">
+            <div id="login">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Login</h2>
                     </div>
-                    <div class="card-content-area">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" autocomplete="off" required>
+                    <div class="card-content">
+                        <div class="card-content-area">
+                            <label for="utilizador">Utilizador</label>
+                            <input type="text" id="utilizador" autocomplete="off" required>
+                        </div>
+                        <div class="card-content-area">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" autocomplete="off" required>
+                        </div>
+                        <div class="card-forgotpassword">Lembrar password
+                            <input type="checkbox" id="remenber">
+                        </div>
                     </div>
-                    <div class="card-forgotpassword">Lembrar password
-                        <input type="checkbox" id="remenber">
+                    <div class="card-footer">
+                        <input type="submit" value="login" class="submit">
+                        <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                        <a href="/html/signup.html" class="signup">Criar Conta</a>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <input type="submit" value="login" class="submit">
-                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-                    <a href="/html/signup.html" class="signup">Criar Conta</a>
-                </div>
 
+                </div>
             </div>
-        </div>
+        </form>
         <script type="module" src="../js/login.js"></script>
     </main>
 
