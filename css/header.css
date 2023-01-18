@@ -33,12 +33,11 @@ ul {
 .menu-principal {
     width: 100%;
     background-image: url(../img/index/footer2.png);
-    height: 60px;
+    border-bottom: 3px solid #efefef;
 }
 
 .content {
     margin: 0 auto;
-    width: 980px;
     position: relative;
 }
 
@@ -55,8 +54,9 @@ ul {
 }
 
 .menu-urls {
-    height: 80px;
-    border-bottom: 3px solid #efefef;
+    width: 100%;
+    float: left;
+    position: relative;
 }
 
 .menu ul li {
@@ -141,4 +141,52 @@ a:active {
 
 .bloco-logos img {
     margin-top: 0px;
+}
+
+
+@media screen and (max-width:500px){
+    .menu{
+        float: none;
+        padding:5%;
+    }
+
+    .menu ul{
+        display:flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .header-2{
+        padding:0;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        color: #8b8b8b;
+        margin: 0;
+        height: auto;
+    }
+
+    .busca{
+        float:none;
+    }
+
+    .busca input {
+        margin:2%;
+        width: 70%;
+        height: 5vh;
+    }
+
+    .procurar-header{
+        margin:0 auto;
+        width: 40%;
+        height: 2vh;
+    }
+
+    .menu-urls {
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+
 }
