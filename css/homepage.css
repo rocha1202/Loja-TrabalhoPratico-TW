@@ -35,12 +35,12 @@ button.slick-next {
 
 .slick-dots li button {
     font-size: 0px;
-    border: 5px solid #ffffff;
+    border: 1px solid #ffffff;
     width: 26px;
     height: 26px;
     background: transparent;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: hand;
 
 }
 
