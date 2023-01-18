@@ -88,6 +88,7 @@ export function login(username, password, remenber) {
   
   // caso o usuario não existe
   if(storedPassword == null) {
+    window.alert(`O usuario ${username} não existe.`);
     console.error(`O usuario ${username} não existe.`);
     
     return false;
@@ -96,7 +97,7 @@ export function login(username, password, remenber) {
   // a palavra-passe está errado
   if(storedPassword != password) {
     console.error(`Palavra-passe para usuario ${username} está errado.`);
-    
+    window.alert(`Palavra-passe para usuario ${username} está errado.`);
     return false;
   }
 
@@ -105,8 +106,8 @@ export function login(username, password, remenber) {
   
   // loga o usuario definindo o login
   storageMethod.setItem("login", username);
-  console.log(`Logado como ${username}.`)
-  
+  console.log(`Logado como ${username}.`);
+  window.alert(`Logado como ${username}.`);
   return username;
 }
 
@@ -123,6 +124,7 @@ export function signUp(username, password, remenber) {
   // retona falso caso o usuario ja existe
   if(getUser(username) != null) {
     console.error(`O usuario ${username} já existe.`);
+    window.alert(`O usuario ${username} já existe.`);
     return false;
   }
 

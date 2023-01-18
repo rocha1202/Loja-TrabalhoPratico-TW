@@ -1,65 +1,20 @@
-class Conta {
-  verify() {
-      const [email, senha] = getData()
-      const id = localStorage.getItem('id')
+import { login, home } from "./module.mjs";
 
-      for (let i = 1; i < id; i++) {
-          const { e: emailSis, s: senhaSis } = JSON.parse(localStorage.getItem(`conta${i}`))
-          // console.log ( email , emailSis)
+const div = document.querySelector("#login");
+const form = document.querySelector("form");
+const username = document.querySelector("#utilizador");
+const password = document.querySelector("#password");
+const remenber = document.querySelector("#remenber");
 
-          if (email === emailSis && senha === senhaSis) {
-              this.approved(email)
-              break
-          }
+form.addEventListener("submit", (event) => {
+event.preventDefault();
+ /** O nome do usuario se o login succeder ou false caso contrario */
+ const success = login(username.value, password.value, remenber.checked)
 
-          if (i === id - 1) {
-              this.disapproved()
-          }
-      }
-  }
-  // Sistema de verificação com Alert personalizado
-  approved(email) {
-      Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'login aprovado, você sera redirecionado(a) a tela inicial',
-          showConfirmButton: false,
-          timer: 1500,
-          confirmButtonColor: "#DD6B55"
-      })
-      localStorage.setItem('userLogado', email)
+ if(!success) {
+   div.className = "error"
+   return
+ }
 
-      setTimeout(function () {
-          window.location.href = 'index.html'
-      }, 1500)
-
-
-  }
-
-  disapproved() {
-      limparInput()
-      Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'senha e/ou usuarios incorreto(s)',
-          confirmButtonColor: "#DD6B55"
-
-          // footer: '<a href="">Why do I have this issue?</a>'
-      })
-  }
-}
-
-document.querySelector('#login-btn').addEventListener('click', () => {
-  const conta = new Conta()
-  conta.verify()
+ home()
 })
-
-//funcoes
-
-const getData = () => [document.querySelector('#email').value,
-document.querySelector('#senha').value
-]
-
-const limparInput = () => {
-  document.querySelector('#senha').value = ''
-}
