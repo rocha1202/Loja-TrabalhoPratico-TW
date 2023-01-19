@@ -137,7 +137,24 @@ hr {
     color: black;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (min-width:500px) and (max-width:1000px){
+
+    .product {
+        width: 30%;
+    }
+
+    .products-section {
+        flex-direction:row ;
+    }
+
+    hr {
+        width: 100%;
+        border-top: 3px solid black;
+    }
+}
+
+
+@media screen and (max-width:500px){
 
     .product {
         width: 30%;

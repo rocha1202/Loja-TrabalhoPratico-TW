@@ -7,6 +7,15 @@
 .content-footer {
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-div{
+    width: 20%;
+    text-align: center;
+    transition:box-shadow 3s;
 }
 
 .footer h3 {
@@ -16,14 +25,13 @@
 .footer {
     background-image: url('/img/index/footer.png');
     color: #ffffff;
+    width: 100%;
 }
 
 .footer-2 {
     background-image: url('/img/index/footer2.png');
     color: #c1c1c1;
-    height: 90px;
 }
-
 
 .footer p {
     width: 90%;
@@ -70,4 +78,19 @@
 
 .telefoneico:before {
     background-image: url('../img/index/telefoneico.png');
+}
+
+
+@media screen and (max-width:700px){
+
+    .content-footer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-div{
+        width: 80%;
+        text-align: center;
+        transition:box-shadow 3s;
+    }
 }

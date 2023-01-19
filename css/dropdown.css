@@ -1,13 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 10px;
-}
-
 .account {
   display: inline-block; /* mesmo que o inline só que respeita o comprimento e largura */
   text-align: center;

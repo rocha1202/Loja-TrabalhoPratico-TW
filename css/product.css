@@ -13,18 +13,17 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
-}
-
-.product-section h1{
-    color:#232623;
+    margin-top:1%;
 }
 
 .spacer{
     width: 100%;
+    margin-top:1%;
     border: 1px solid #232623;
 }
 
 .header-products{
+    color:#232623;
     text-decoration: none;
 }
 
