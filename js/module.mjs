@@ -18,7 +18,7 @@ export function home(time=2) {
   // mudar o path faz a pagina fazer reload para a para o novo path
   setTimeout(() => {
     location.pathname = "/"
-  }, time * 1000)
+  }, time * 500)
 }
 
 /**

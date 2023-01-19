@@ -92,7 +92,13 @@ body {
     font-size: 15px;
     text-transform: uppercase;
 }
-
+.menu ul li span {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
 .menu {
     text-align: center;
     width: 30%;
