@@ -389,22 +389,30 @@
                     document.getElementById("software-content").style.display = "none";
                     document.getElementById("perifericos-content").style.display = "none";
                     document.getElementById("hardware-content").style.display = "flex";
+                    document.getElementById("software").style.textDecoration = "none";
+                    document.getElementById("perifericos").style.textDecoration = "none";
+                    document.getElementById("hardware").style.textDecoration = "underline solid #00bac6";
                     break;
                 case "software":
                     document.getElementById("perifericos-content").style.display = "none";
                     document.getElementById("hardware-content").style.display = "none";
                     document.getElementById("software-content").style.display = "flex";
+                    document.getElementById("perifericos").style.textDecoration = "none";
+                    document.getElementById("hardware").style.textDecoration = "none";
+                    document.getElementById("software").style.textDecoration = "underline solid #00bac6";
                     break;
                 case "perifericos":
                     document.getElementById("software-content").style.display = "none";
                     document.getElementById("hardware-content").style.display = "none";
                     document.getElementById("perifericos-content").style.display = "flex";
+                    document.getElementById("software").style.textDecoration = "none";
+                    document.getElementById("hardware").style.textDecoration = "none";
+                    document.getElementById("perifericos").style.textDecoration = "underline solid #00bac6";
                     break;
             }
         }
     
     </script>
-
 </body>
 
 </html>
