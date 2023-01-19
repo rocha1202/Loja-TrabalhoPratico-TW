@@ -1,4 +1,3 @@
-
 button.slick-prev {
     font-size: 0px;
     border: none;
@@ -59,8 +58,87 @@ li.slick-active button {
     padding-left: 10px;
     display: inline-block;
 }
+
 h2 {
     text-align: center;
     margin: 0;
     padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+.products-section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 10%;
+    background-color: rgb(35, 38, 35);
+    border: 2px solid rgb(35, 38, 35);
+    margin: 3%;
+    transition: box-shadow 0.5s ease 0s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product:hover {
+    box-shadow: 0px 0px 15px #232623;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#desc-prod {
+    color: white;
+    text-align: center;
+}
+
+
+.product-button {
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: text-shadow 0.5s ease 0s;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-button:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 8px #232623;
+}
+
+hr {
+    width: 70%;
+    border-top: 3px solid black;
+}
+
+.product-button a:link,.product-button a:visited {
+    color: black;
+}
+
+@media screen and (max-width:1100px){
+
+    .product {
+        width: 30%;
+    }
 }
