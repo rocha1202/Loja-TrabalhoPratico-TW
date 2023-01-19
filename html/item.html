@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/item.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css" />
+
 </head>
 
 <body>
@@ -32,8 +34,21 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
-                            <a href="/html/login.html">Login</a>
+                            <span id="login"><a href="/html/login.html">Login</a></span>
                         </li>
+                        <li class="account">
+                            <span id="user"></span>
+                            <div class="dropdown">
+                              <div class="dropdown_content">
+                                <p>Utilizador</p>
+                                <p>Editar perfil</p>
+                                <p onclick=sair()>Logout</p>
+
+                                <p></p>
+                              </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -61,7 +76,6 @@
             </div>
         </div>
     </main>
-    <script type="text/javascript" src="/js/item.js"></script>
 
     <footer>
         <div class="col-100-footer footer">
@@ -124,6 +138,7 @@ document.getElementById("item-thumb-1").addEventListener("click", changeImg1);
 document.getElementById("item-thumb-2").addEventListener("click", changeImg2);
 
 </script>
+<script type="text/javascript" src="/js/index.js"></script>
 
 </body>
 
