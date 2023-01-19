@@ -14,17 +14,6 @@
 </head>
 <!-- a classe logout indica que está sem uma conta, caso logado a classe é login -->
 <!-- a classe light indica o tema a usar -->
-<style>
-body{
-    background-color: #232623;
-}
-
-main{
-    width: 70%;
-    background-color: white;
-    margin: 0 auto;
-}
-</style>
 <body>
     <header class="menu-principal">
         <div class="header-1">
@@ -53,38 +42,297 @@ main{
             </div>
     </header>
     <main>
-        <div class="box" id="box-1">
-            <div class="cover" id="cover-1"></div>
-            <div class="content" id="content-1">
-                <h1>Hardware</h1>
-                <div class="button-product">
-                    <p><a id="link-box" href="index.html">Ver mais</a></p>
+        <div class="main-content">
+            <div class="product-section">
+                <h2><a class="header-products" id="hardware" onclick="ChangeCategory('hardware')">Hardware</a></h2>
+                <h2><a class="header-products" id="software" onclick="ChangeCategory('software')">Software</a></h2>
+                <h2><a class="header-products" id="perifericos" onclick="ChangeCategory('perifericos')">Periféricos</a></h2>
+                <hr class="spacer">
+                <div class="products-section" id="hardware-content">
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="/html/item.html">
+                                <p onclick="itemID()">Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/ram.webp" class="product-img">
+                        <p id="desc-prod">Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</p>
+                        <div class="product-button">
+                            <a class="link-box" href="#">
+                                <p>Ver mais</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="box" id="box-2">
-            <div class="content" id="content-2">
-                <h1>Software</h1>
-                <br><br>
-                <div class="button-product">
-                    <a id="link-box" href="index.html">
-                        <p>Ver mais</p>
-                    </a>
+            <div class="product-section">
+                <div class="products-section" id="software-content" >
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Office365.png" class="product-img">
+                        <p id="desc-prod">Microsoft Office 2021 (Windows/Mac)</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cover" id="cover-2"></div>
-        </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="box" id="box-3">
-            <div class="cover" id="cover-3"></div>
-            <div class="content" id="content-3">
-                <h1>Periféricos</h1>
-                <div class="button-product">
-                    <a id="link-box" href="index.html">
-                        <p>Ver mais</p>
-                    </a>
+            <div class="product-section">
+                <div class="products-section" id="perifericos-content">
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="../img/index/Rato.jpg" class="product-img">
+                        <p id="desc-prod">Rato Gaming Wireless Basilisk Viper Ultimate</p>
+                        <div class="product-button">
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,6 +382,28 @@ main{
         </div>
     </footer>
 
+    <script>
+        function ChangeCategory(header){
+            switch(header) {
+                case "hardware":
+                    document.getElementById("software-content").style.display = "none";
+                    document.getElementById("perifericos-content").style.display = "none";
+                    document.getElementById("hardware-content").style.display = "flex";
+                    break;
+                case "software":
+                    document.getElementById("perifericos-content").style.display = "none";
+                    document.getElementById("hardware-content").style.display = "none";
+                    document.getElementById("software-content").style.display = "flex";
+                    break;
+                case "perifericos":
+                    document.getElementById("software-content").style.display = "none";
+                    document.getElementById("hardware-content").style.display = "none";
+                    document.getElementById("perifericos-content").style.display = "flex";
+                    break;
+            }
+        }
+    
+    </script>
 
 </body>
 
