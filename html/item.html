@@ -20,6 +20,9 @@
         </div>
         <div class="menu-urls">
             <div class="header-2">
+                <div class="busca">
+                    <input placeholder="Procurar..." type="text" />
+                </div>
                 <div class="menu">
                     <ul>
                         <li>
@@ -36,15 +39,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="busca">
-                    <input placeholder="Procurar..." type="text" />
-                </div>
             </div>
     </header>
     <main>
         <div class="item-section">
             <div class="item-box">
-                <div class="product-img"></div>
+                <div class="product-img" id="Main-image"></div>
                 <div class="item-price-top">
                     <p id="item-price">10$</p>
                     <div class="item-desc">
@@ -67,7 +67,7 @@
     <script type="text/javascript" src="/js/item.js"></script>
 
     <footer>
-        <div class="col-100 footer">
+        <div class="col-100-footer footer">
             <div class="content">
                 <div class="col-4">
                     <h3><b>Post's Populares</b></h3>
@@ -102,14 +102,31 @@
                 </div>
             </div>
         </div>
-        <div class="col-100 footer-2">
-            <div class="content">
+        <div class="col-100-footer footer-2">
+            <div class="content-footer">
                 <p>
                     Copyright &copy; Grupo 14 - TSIW
                 </p>
             </div>
         </div>
     </footer>
+
+<script>
+
+function changeImg1(){
+    document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/products/ram.webp)');
+}
+
+function changeImg2(){
+    document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/products/ram2.jpg)');
+}
+
+
+
+document.getElementById("item-thumb-1").addEventListener("click", changeImg1);
+document.getElementById("item-thumb-2").addEventListener("click", changeImg2);
+
+</script>
 
 </body>
 

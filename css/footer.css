@@ -1,3 +1,14 @@
+.col-100-footer{
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.content-footer {
+    margin: 0 auto;
+    position: relative;
+}
+
 .footer h3 {
     text-align: left;
 }

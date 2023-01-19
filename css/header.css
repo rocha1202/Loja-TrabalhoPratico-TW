@@ -26,14 +26,11 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-ul {
-    padding: 0px !important;
-}
+
 
 .menu-principal {
     width: 100%;
     background-image: url(../img/index/footer2.png);
-    border-bottom: 3px solid #efefef;
 }
 
 .content {
@@ -50,20 +47,35 @@ ul {
     background-color: #ffffff;
     width: auto;
     margin: 0 auto;
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .menu-urls {
     width: 100%;
-    float: left;
     position: relative;
+    border-bottom: 3px solid #efefef;
+}
+
+.menu ul{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 7vh;
+    align-items: center;
 }
 
 .menu ul li {
-    display: inline-block;
     color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
+    height: 100%;
+    vertical-align: middle;
+    justify-content:center;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
 }
 
 .menu ul li:hover {
@@ -72,7 +84,6 @@ ul {
 
 .menu ul li a:hover {
     color: #00bac6;
-
 }
 
 .menu ul li a {
@@ -84,16 +95,14 @@ ul {
 
 .menu {
     text-align: center;
-    float: right;
+    width: 30%;
 }
 
 .busca {
     text-align: center;
-    float: left;
 }
 .col-100 {
     width: 100%;
-    float: left;
     position: relative;
 }
 
@@ -102,7 +111,7 @@ ul {
     background-repeat: no-repeat;
     height: 36px;
     padding: 3px;
-    width: 190px;
+    width: 30vh;
     margin-top: 10px;
     background-position: 96%;
     border: 1px solid #d6d6d6;
@@ -150,31 +159,29 @@ a:active {
 }
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:1000px){
     .menu{
-        float: none;
-        padding:5%;
+        padding:0;
+        width: 100%;
     }
 
     .menu ul{
-        display:flex;
         justify-content: space-evenly;
-        margin: 0 auto;
     }
 
     .header-2{
         padding:0;
+        flex-wrap: wrap;
     }
 
     .menu ul li {
-        display: inline-block;
         color: #8b8b8b;
         margin: 0;
-        height: auto;
+        height: 100%;
     }
 
     .busca{
-        float:none;
+        width: 100%;
     }
 
     .busca input {
@@ -191,8 +198,18 @@ a:active {
 
     .menu-urls {
         width: 100%;
-        float: none;
         position: relative;
     }
 
+}
+
+@media screen and (min-width:1000px) and (max-width:1300px){
+    .busca{
+        width: 40%;
+    }
+
+    .menu{
+        padding:0;
+        width: 60%;
+    }
 }
