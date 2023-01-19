@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/css/homepage.css" />
     <link rel="stylesheet" type="text/css" href="/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
 </head>
 
 <body>
@@ -37,8 +38,20 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
-                            <a href="/html/login.html">Login</a>
+                            <span id="login"><a href="/html/login.html">Login</a></span>
                         </li>
+                        <li class="account">
+                            <span id="user"><a href="#"></a></span>
+                            <div class="dropdown">
+                              <div class="dropdown_content">
+                                <p>Utilizador</p>
+                                <p>Editar perfil</p>
+                                <p>Logout</p>
+                                <p></p>
+                              </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -277,9 +290,10 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="./js/index.js/jquery.js"></script>
-    <script type="text/javascript" src="./js/index.js/slick.min.js"></script>
-    <script type="text/javascript" src="./js/index.js/carrossel.js"></script>
+    <script type="text/javascript" src="./js/index/jquery.js"></script>
+    <script type="text/javascript" src="./js/index/slick.min.js"></script>
+    <script type="text/javascript" src="./js/index/carrossel.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
