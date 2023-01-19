@@ -141,4 +141,9 @@ hr {
     .product {
         width: 30%;
     }
+
+    hr {
+        width: 100%;
+        border-top: 3px solid black;
+    }
 }
