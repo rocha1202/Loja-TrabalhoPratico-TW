@@ -34,6 +34,13 @@
 }
 .drop{
   cursor: crosshair;
+  text-transform: uppercase;
+  justify-content:center
+
+}
+.drop:hover{
+  color: #00bac6;
+
 }
 .account p {
   margin: 10px 0;
