@@ -1,7 +1,6 @@
 .account {
   display: inline-block; /* mesmo que o inline só que respeita o comprimento e largura */
   text-align: center;
-
 }
 
 .account a, .account a:visited {
