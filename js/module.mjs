@@ -85,6 +85,14 @@ export function login(username, password, remenber) {
 
   /** A palavra-passe armazenada */
   let storedPassword = getUser(username);
+
+  /** lista de compras */
+  let cart = localStorage.getItem("cart")
+
+  if (cart[username] == null){
+    cart[username] = [];
+    localStorage.setItem("cart", cart)
+  }
   
   // caso o usuario não existe
   if(storedPassword == null) {

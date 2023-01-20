@@ -1,3 +1,15 @@
+
+
+let user = localStorage.getItem("username")
+
+/*
+
+if (user == null){
+    window.location = "../index.html"
+}
+
+*/
+
 var maxItem = document.getElementsByName("item").length
 
 function removeItem(item){
@@ -13,7 +25,6 @@ function removeItem(item){
 }
 
 function Comprar(){
-    console.log(maxItem)
     items_container_child = document.getElementById("template");
     items_container_child.display = "grid;"
     grid_cart = items_container_child.cloneNode(true);

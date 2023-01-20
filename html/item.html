@@ -62,8 +62,8 @@
                             <p id="item-title">Kingston FURY Beast 16GB DDR4 SDRAM</p>
                             <p id="item-types">Tipo</p>
                             <div class="item-thumbs" id="item-thumbs">
-                                <div class="item-thumb" id="item-thumb-1" onclick="changeImg(1)"></div>
-                                <div class="item-thumb" id="item-thumb-2" onclick="changeImg(2)"></div>
+                                <div class="item-thumb" id="item-thumb-1" onclick="changeImg()"></div>
+                                <div class="item-thumb" id="item-thumb-2" onclick="changeImg()"></div>
                             </div>
                             <div class="buy-button" id="buy-button">
                                 <p>Adicionar ao carrinho</p>
@@ -122,20 +122,59 @@
 
 <script>
 
-function changeImg(ID){
-    switch(ID) {
-    case 1:
+
+function changeImg(){
+    switch(ID_product) {
+    case "hardware":
         document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/products/ram.webp)');
         document.getElementById("item-title").innerHTML = "Kingston FURY Beast 16GB DDR4 SDRAM";
         document.getElementById("item-price").innerHTML = "30$";
         break;
-    case 2:
+    case "software":
+        document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/products/ram2.jpg)');
+        document.getElementById("item-title").innerHTML = "Kingston FURY V2 Beast 32GB DDR4 SDRAM";
+        document.getElementById("item-price").innerHTML = "60$";
+        break;
+    case "perifericos":
         document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/products/ram2.jpg)');
         document.getElementById("item-title").innerHTML = "Kingston FURY V2 Beast 32GB DDR4 SDRAM";
         document.getElementById("item-price").innerHTML = "60$";
         break;
     }
 }
+
+function getProductID(){
+
+    let url = window.location.href;
+    console.log(url)
+    let position = url.indexOf("=");
+    let IDproduct = url.slice(position+1);
+
+    console.log(IDproduct)
+    switch(IDproduct) {
+        case "hardware":
+            document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/index/ram.webp)');
+            document.getElementById("item-thumb-1").setAttribute('style', 'background-image: url(../img/index/ram.webp)');
+            document.getElementById("item-thumb-2").setAttribute('style', 'background-image: url(../img/index/ram.webp)');
+            break;
+        case "software":
+            document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/index/Office365.png)');
+            document.getElementById("item-thumb-1").setAttribute('style', 'background-image: url(../img/index/Office365.png)');
+            document.getElementById("item-thumb-2").setAttribute('style', 'background-image: url(../img/index/Office365.png)');
+            break;
+        case "perifericos":
+            document.getElementById("Main-image").setAttribute('style', 'background-image: url(../img/index/Rato.jpg)');
+            document.getElementById("item-thumb-1").setAttribute('style', 'background-image: url(../img/index/Rato.jpg)');
+            document.getElementById("item-thumb-2").setAttribute('style', 'background-image: url(../img/index/Rato.jpg)');
+            break;
+    }
+    return IDproduct
+}
+
+var ID_product = getProductID
+
+window.onload = getProductID
+
 
 </script>
 <script type="text/javascript" src="/js/index.js"></script>

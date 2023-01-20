@@ -23,7 +23,6 @@
     background-repeat: no-repeat;
     background-size:cover;
     margin:2%;
-    background-image: url("../img/products/ram.webp");
     border-radius: 10px;
     box-shadow: 0px 0px 5px white;
 }
@@ -100,13 +99,6 @@
     transition: box-shadow 0.5s;
 }
 
-#item-thumb-1{
-    background-image: url("../img/products/ram.webp");
-}
-
-#item-thumb-2{
-    background-image: url("../img/products/ram2.jpg");
-}
 
 #item-thumb-1,#item-thumb-2{
     cursor:pointer;

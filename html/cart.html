@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="/css/cart.css" />
     <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
 </head>
-<!-- a classe logout indica que está sem uma conta, caso logado a classe é login -->
-<!-- a classe light indica o tema a usar -->
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/cart.js"></script>
+<script>
+    import { login, home } from "./module.mjs";
+
+    console.log(sessionStorage(username))
+
+    if(localStorage(username) == NULL){
+        window.location.replace("../index.html");
+    }
+</script>
 <body>
     <header class="menu-principal">
         <div class="header-1">
@@ -81,7 +90,7 @@
                 </div>
                 <hr class="spacer">
                 <div class="button-buy" onclick="Comprar()">
-                    <h2>Comprar(adicionar um novo temp)</h2>
+                    <h2>Adicionar novo item temp</h2>
                 </div>
             </div>
         </div>
@@ -130,17 +139,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="/js/index.js"></script>
-    <script type="text/javascript" src="/js/cart.js"></script>
-    <script>
-        import { login, home } from "./module.mjs";
-
-        console.log(sessionStorage(username))
-
-        if(localStorage(username) == NULL){
-            window.location.replace("../index.html");
-        }
-    </script>
 </body>
 
 </html>
