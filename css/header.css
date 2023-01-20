@@ -132,13 +132,16 @@ a:active {
     cursor: default;
     margin: 0 auto;
     padding-top: 1em;
+    transition: .2s box-shadow ease-in-out;
     vertical-align: middle;
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 
 .col-4 img:hover {
     box-shadow: 0px 0px 5px black;
-
 }
 
 .img-baixo{
