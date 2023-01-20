@@ -23,9 +23,7 @@
         </div>
         <div class="menu-urls">
             <div class="header-2">
-                <div class="busca">
-                    <input placeholder="Procurar..." type="text" />
-                </div>
+
                 <div class="menu">
                     <ul>
                         <li>
@@ -35,7 +33,16 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
-                            <a href="/html/login.html">Login</a>
+                            <span id="login"><a href="/html/login.html">Login</a></span>
+                        </li>
+                        <li class="account">
+                            <span id="user"></span>
+                            <div class="dropdown">
+                              <div class="dropdown_content">
+                                <a class="drop" href="/html/cart.html"><p>Carrinho</p></a>
+                                <p class="drop" onclick=sair()>Logout</p>
+                              </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -120,24 +127,9 @@
             </div>
         </div>
     </footer>
-<script>
+    <script type="text/javascript" src="/js/index.js"></script>
 
-function removeItem(id){
-    var parent = document.getElementById("item-"+id)
-    parent.remove();
-}
-
-function Comprar(){
-    cloneList = document.getElementsByClassName("grid-cart")
-    clone = cloneList[1]
-    clone.id = "item-3"
-    console.log(clone)
-    parent = document.getElementById("items-container")
-    console.log(parent)
-    parent.appendChild(clone);
-}
-
-</script>
+    <script type="text/javascript" src="/js/cart.js"></script>
 
 </body>
 
