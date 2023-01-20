@@ -88,7 +88,7 @@ export function login(username, password, remenber) {
   
   // caso o usuario não existe
   if(storedPassword == null) {
-    window.alert(`O usuario ${username} não existe.`);
+    window.alert(`O utilizador ${username} não existe.`);
     console.error(`O usuario ${username} não existe.`);
     
     return false;
@@ -96,8 +96,8 @@ export function login(username, password, remenber) {
   
   // a palavra-passe está errado
   if(storedPassword != password) {
+    window.alert(`A palavra-passe do utilizador ${username} está errada.`);
     console.error(`Palavra-passe para usuario ${username} está errado.`);
-    window.alert(`Palavra-passe para usuario ${username} está errado.`);
     return false;
   }
 
@@ -107,7 +107,7 @@ export function login(username, password, remenber) {
   // loga o usuario definindo o login
   storageMethod.setItem("login", username);
   console.log(`Logado como ${username}.`);
-  window.alert(`Logado como ${username}.`);
+  window.alert(`Bem-vindo/a ${username}.`);
   return username;
 }
 
@@ -124,13 +124,13 @@ export function signUp(username, password, remenber) {
   // retona falso caso o usuario ja existe
   if(getUser(username) != null) {
     console.error(`O usuario ${username} já existe.`);
-    window.alert(`O usuario ${username} já existe.`);
+    window.alert(`O utilizador ${username} já existe.`);
     return false;
   }
 
   // guarda os dados do login no local storage (permanente)
   localStorage.setItem(username, password)
-  window.alert(`Usuario ${username} criado com sucesso.`);
+  window.alert(`Utilizador ${username} criado com sucesso.`);
   console.log(`Usuario ${username} criado com sucesso.`);
 
   // faz o login e retorna o nome do usuario

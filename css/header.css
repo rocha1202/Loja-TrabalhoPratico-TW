@@ -129,7 +129,7 @@ a:active {
 }
 
 .col-4 img {
-    cursor: pointer;
+    cursor: default;
     margin: 0 auto;
     padding-top: 1em;
     vertical-align: middle;
