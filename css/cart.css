@@ -46,6 +46,10 @@
     margin: 1%;
 }
 
+#template{
+    display: none;
+}
+
 .header-grid{
     text-align: center;
 }

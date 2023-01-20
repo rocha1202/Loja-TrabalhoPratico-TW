@@ -33,6 +33,9 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
+                            <a href="/html/cart.html">Carrinho</a>
+                        </li>
+                        <li>
                             <span id="login"><a href="/html/login.html">Login</a></span>
                         </li>
                         <li class="account">
@@ -61,19 +64,19 @@
                         <h3 class="header-grid">Nome</h3>
                         <h3 class="header-grid">Ação</h3>
                     </div>
-                    <div class="grid-cart" id="item-1">
+                    <div class="grid-cart" id="template" name="item">
                         <img src="../img/index/ram.webp" class="item-img" id="img-item">
                         <p class="item-text" id="quantidade">1</p>
                         <p class="item-text" id="preco">60€</p>
                         <p class="item-text" id="nome">Kingston FURY Beast 16GB DDR4 SDRAM</p>
-                        <p class="item-text" id="acao" onclick="removeItem(1)">Remover</p>
+                        <p class="item-text" id="acao" onclick="removeItem(this)">Remover</p>
                     </div>
-                    <div class="grid-cart" id="item-2">
+                    <div class="grid-cart" id="item-1" name="item">
                         <img src="../img/index/ram.webp" class="item-img" id="img-item">
-                        <p class="item-text" id="quantidade">5</p>
-                        <p class="item-text" id="preco">50€</p>
+                        <p class="item-text" id="quantidade">3</p>
+                        <p class="item-text" id="preco">60€</p>
                         <p class="item-text" id="nome">Kingston FURY Beast 16GB DDR4 SDRAM</p>
-                        <p class="item-text" id="acao" onclick="removeItem(2)">Remover</p>
+                        <p class="item-text" id="acao" onclick="removeItem(this)">Remover</p>
                     </div>
                 </div>
                 <hr class="spacer">
@@ -128,9 +131,16 @@
         </div>
     </footer>
     <script type="text/javascript" src="/js/index.js"></script>
-
     <script type="text/javascript" src="/js/cart.js"></script>
+    <script>
+        import { login, home } from "./module.mjs";
 
+        console.log(sessionStorage(username))
+
+        if(localStorage(username) == NULL){
+            window.location.replace("../index.html");
+        }
+    </script>
 </body>
 
 </html>
