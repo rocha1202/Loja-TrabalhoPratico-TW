@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/product.css" />
-
+    <link rel="stylesheet" href="/css/dropdown.css" />
 </head>
 <!-- a classe logout indica que está sem uma conta, caso logado a classe é login -->
 <!-- a classe light indica o tema a usar -->
@@ -23,9 +23,6 @@
         </div>
         <div class="menu-urls">
             <div class="header-2">
-                <div class="busca">
-                    <input placeholder="Procurar..." type="text" />
-                </div>
                 <div class="menu">
                     <ul>
                         <li>
@@ -35,8 +32,21 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
-                            <a href="/html/login.html">Login</a>
+                            <span id="login"><a href="/html/login.html">Login</a></span>
                         </li>
+                        <li class="account">
+                            <span id="user"></span>
+                            <div class="dropdown">
+                              <div class="dropdown_content">
+                                <p>Utilizador</p>
+                                <p>Editar perfil</p>
+                                <p onclick=sair()>Logout</p>
+
+                                <p></p>
+                              </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
