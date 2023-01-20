@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="/css/login.css" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
     <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
 </head>
+<!-- a classe logout indica que está sem uma conta, caso logado a classe é login -->
+<!-- a classe light indica o tema a usar -->
 <body>
     <header class="menu-principal">
         <div class="header-1">
@@ -20,6 +23,9 @@
         </div>
         <div class="menu-urls">
             <div class="header-2">
+                <div class="busca">
+                    <input placeholder="Procurar..." type="text" />
+                </div>
                 <div class="menu">
                     <ul>
                         <li>
@@ -29,57 +35,47 @@
                             <a href="/html/products.html">Produtos</a>
                         </li>
                         <li>
-                            <span id="login"><a href="/html/login.html">Login</a></span>
+                            <a href="/html/login.html">Login</a>
                         </li>
-                        <li class="account">
-                            <span id="user"></span>
-                            <div class="dropdown">
-                              <div class="dropdown_content">
-                                <p>Utilizador</p>
-                                <p>Editar perfil</p>
-                                <p onclick=sair()>Logout</p>
-
-                                <p></p>
-                              </div>
-                            </div>
-                        </li>
-
                     </ul>
                 </div>
             </div>
     </header>
     <main>
-        <form id="form">
-            <div id="login">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Login</h2>
+        <div class="main-content">
+            <div class="cart">
+                <h1>Carrinho</h1>
+                <hr class="spacer">
+                <div class="items-container" id="items-container">
+                    <div class="grid-cart">
+                        <h3 class="header-grid">Produto</h3>
+                        <h3 class="header-grid">Quantidade</h3>
+                        <h3 class="header-grid">Preço</h3>
+                        <h3 class="header-grid">Nome</h3>
+                        <h3 class="header-grid">Ação</h3>
                     </div>
-                    <div class="card-content">
-                        <div class="card-content-area">
-                            <label for="utilizador">Utilizador</label>
-                            <input type="text" id="utilizador" autocomplete="off" required>
-                        </div>
-                        <div class="card-content-area">
-                            <label for="password">Senha</label>
-                            <input type="password" id="password" autocomplete="off" required>
-                        </div>
-                        <div class="card-forgotpassword">Lembrar password
-                            <input type="checkbox" id="remenber">
-                        </div>
+                    <div class="grid-cart" id="item-1">
+                        <img src="../img/products/ram.webp" class="item-img" id="img-item">
+                        <p class="item-text" id="quantidade">1</p>
+                        <p class="item-text" id="quantidade">60$</p>
+                        <p class="item-text" id="nome">Kingston FURY Beast 16GB DDR4 SDRAM</p>
+                        <p class="item-text" id="acao" onclick="removeItem(1)">Remover</p>
                     </div>
-                    <div class="card-footer">
-                        <input type="submit" id="login-btn" class="submit">
-                        <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-                        <a href="/html/signup.html" class="signup">Criar Conta</a>
+                    <div class="grid-cart" id="item-2">
+                        <img src="../img/products/ram.webp" class="item-img" id="img-item">
+                        <p class="item-text" id="quantidade">1</p>
+                        <p class="item-text" id="quantidade">50$</p>
+                        <p class="item-text" id="nome">Kingston FURY Beast 16GB DDR4 SDRAM</p>
+                        <p class="item-text" id="acao" onclick="removeItem(2)">Remover</p>
                     </div>
-
+                </div>
+                <hr class="spacer">
+                <div class="button-buy" onclick="Comprar()">
+                    <h2>Comprar</h2>
                 </div>
             </div>
-        </form>
-        <script type="module" src="../js/login.js"></script>
+        </div>
     </main>
-
     <footer>
         <div class="col-100-footer footer">
             <div class="content-footer">
@@ -124,6 +120,24 @@
             </div>
         </div>
     </footer>
+<script>
+
+function removeItem(id){
+    var parent = document.getElementById("item-"+id)
+    parent.remove();
+}
+
+function Comprar(){
+    cloneList = document.getElementsByClassName("grid-cart")
+    clone = cloneList[1]
+    clone.id = "item-3"
+    console.log(clone)
+    parent = document.getElementById("items-container")
+    console.log(parent)
+    parent.appendChild(clone);
+}
+
+</script>
 
 </body>
 
