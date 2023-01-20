@@ -8,12 +8,9 @@ const sair = () => {
     window.location.href = ''
   }
 if (texto!=null){
-    $(document).ready(() => {
-    
-        $('#user').css({
-            width: '100%',
-            marginLeft: '10%'
-        })
-        $('#user').html(texto)
-        $('#login').html("")
+    addEventListener("load", (event) => {
+        
+        document.getElementById("user").innerText=texto
+        document.getElementById("login").innerText=""
+
 })}
