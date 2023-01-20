@@ -75,7 +75,7 @@
     border: 2px solid #232623;
     text-align:center;
     margin: 2%;
-    transition:background-color 1s, color 1s;
+    transition:background-color 0.5s, color 0.5s;
 }
 
 .button-buy:hover{
