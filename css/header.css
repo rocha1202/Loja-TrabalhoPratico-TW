@@ -16,7 +16,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(19, 19, 19, 0.3);
 }
-
+#user{
+    width: 100%;
+    
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body {
